@@ -8,6 +8,7 @@ import TabList from '@/components/TabList';
 import TabJson from '@/data/academic.json';
 import Schedule from '@/components/Schedule';
 import Hero from '@/components/Hero';
+import Link from 'next/link';
 
 
 const Home = () => {
@@ -42,7 +43,7 @@ const Home = () => {
               <div className="mb-10">
                 <ListPost list={NewsJson} limit={4}/>
               </div>
-              <a href="#" className='btn btn--primary'>View All News <svg stroke="currentColor" fill="currentColor" strokeWidth="0" version="1.1" viewBox="0 0 17 17" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><g></g><path d="M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z"></path></svg></a>
+              <Link href="#" className='btn btn--primary'>View All News <svg stroke="currentColor" fill="currentColor" strokeWidth="0" version="1.1" viewBox="0 0 17 17" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><g></g><path d="M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z"></path></svg></Link>
             </div>
             {/* BREAK LINE*/}
             <div className="bg-primary-light bg-opacity-50"></div>
@@ -52,7 +53,7 @@ const Home = () => {
               <div className="mb-10">
                 <ListPost list={NewsJson} limit={4}/>
               </div>
-              <a href="#" className='btn btn--primary'>View All Notice <svg stroke="currentColor" fill="currentColor" strokeWidth="0" version="1.1" viewBox="0 0 17 17" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><g></g><path d="M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z"></path></svg></a>
+              <Link href="#" className='btn btn--primary'>View All Notice <svg stroke="currentColor" fill="currentColor" strokeWidth="0" version="1.1" viewBox="0 0 17 17" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><g></g><path d="M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z"></path></svg></Link>
             </div>
           </div>
         </div>

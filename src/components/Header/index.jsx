@@ -82,9 +82,9 @@ const Header = () => {
         <div className="container">
           <div className="flex flex-wrap gap-x-[40px] items-center">
             {/* LOGO */}
-            <a href='/' className="header__logo inline-flex xl:-ms-[100px] 2xl:-ms-[130px] xl:-translate-y-[40px] xl:-mb-[35px]">
+            <Link href='/' className="header__logo inline-flex xl:-ms-[100px] 2xl:-ms-[130px] xl:-translate-y-[40px] xl:-mb-[35px]">
               <Image src={Logo} alt={''} className="w-[50px] xl:w-[60px] 2xl:w-[90px] 2xl:h-[90px]" width={Logo.width} height={Logo.height} />
-            </a>
+            </Link>
 
             <button className="xl:hidden ms-auto text-[25px] text-white" type='button' onClick={() => handleToggleDrawer()}>
               <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>          
@@ -95,9 +95,9 @@ const Header = () => {
               <ul className="header__navigation hidden 2xl:flex items-center gap-x-6 uppercase text-white">
                 {data?.navigation.map((item, i) => (
                   <li key={i}>
-                    <a href={item.slug} className={`px-5 py-3 2xl:p-5 inline-block text-md 2xl:text-xl tracking-wide hover:bg-primary-dark transition-all duration-300 ${router.pathname === item.slug ? 'active bg-primary-dark' : ''}`}>
+                    <Link href={item.slug} className={`px-5 py-3 2xl:p-5 inline-block text-md 2xl:text-xl tracking-wide hover:bg-primary-dark transition-all duration-300 ${router.pathname === item.slug ? 'active bg-primary-dark' : ''}`}>
                       {item.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

@@ -1,6 +1,7 @@
 import React from 'react';
 import FooterLogo from '@/assets/images/footer-logo.png';
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 const Footer = () => {
@@ -123,11 +124,11 @@ const Footer = () => {
                 <ul className="flex flex-col gap-2">
                   {list?.map(({ name, url }, s) => (
                     <li key={s}>
-                      <a
+                      <Link
                         href={url}
                         className='text-white text-opacity-75 hover:text-opacity-100 transition-all duration-300'>
                         {name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -137,9 +138,9 @@ const Footer = () => {
         </div>
         {/* Footer Copyright */}
         <div className="text-center pt-10">
-          <a href="#" className='inline-block'>
+          <Link href="#" className='inline-block'>
             <Image src={FooterLogo.src} alt={''} className='max-w-[50px] mx-auto w-auto' width={FooterLogo.width} height={FooterLogo.height} />
-          </a>
+          </Link>
           <div className="mt-3">©2023 open.com. All Right Reserved to Open TV.</div>
         </div>
       </div>
