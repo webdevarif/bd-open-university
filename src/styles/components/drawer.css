@@ -1,0 +1,35 @@
+
+.header__drawer{
+    @apply fixed 
+    top-0
+    -start-full
+    w-[340px]
+    max-w-[90%]
+    bg-white
+    text-black/75
+    p-4
+    h-screen
+    z-[98]
+    shadow-md
+    font-normal
+    transition-all
+    duration-300
+}
+
+.header__drawer-overlay{
+    @apply 
+    content-['']
+    fixed
+    w-full
+    h-full
+    bg-black/70
+    -start-full
+    top-0
+    z-[97]
+}
+
+.header__drawer.is-open,
+.header__drawer-overlay.is-open{
+    @apply 
+    start-0;
+}

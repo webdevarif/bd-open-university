@@ -1,0 +1,91 @@
+body {
+    @apply bg-white 
+    text-dark;
+  }
+  
+.container-fluid {
+    @apply xl:max-w-full 
+    px-[15px] 
+    xl:px-[50px] 
+    2xl:px-[100px]
+}
+
+/* SECTION HEADING */
+.sec-heading span{
+  @apply relative 
+  inline-block 
+  before:content-[""] 
+  before:w-2/3 
+  before:h-[3px] 
+  before:absolute 
+  before:start-1/2 
+  before:bottom-0 
+  before:bg-primary-light 
+  before:-translate-x-1/2 
+  pb-2 
+  text-2xl 
+  font-bold 
+  text-primary 
+  uppercase;
+}
+
+
+/* BUTTONS */
+.btn{
+  @apply px-5 
+  py-3 
+  uppercase 
+  font-semibold 
+  tracking-wide 
+  hover:bg-primary 
+  transition-all 
+  duration-300 
+  inline-flex 
+  items-center 
+  justify-center 
+  gap-2;
+}
+.btn--primary{
+  @apply bg-primary-light text-white;
+}
+
+.ellipsis-1 {
+  @apply overflow-hidden 
+  whitespace-pre-wrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  /* start showing ellipsis when 3rd line is reached */
+  /* let the text wrap preserving spaces */
+}
+
+
+/* TEXT BODY */
+.text-body p{
+  @apply mb-3;
+}
+
+/* NAV TABS */
+.nav--tab .active{
+  @apply 
+  bg-primary-light 
+  text-white 
+  before:absolute 
+  before:content-[""] 
+  before:w-0 
+  before:h-0 
+  before:border-l-[15px] 
+  before:border-l-primary-light 
+  before:border-r-0 
+  before:border-y-[15px] 
+  before:border-y-transparent 
+  before:border-solid 
+  before:left-full 
+  before:top-3;
+}
+.tab--panel{
+  @apply hidden;
+}
+.tab--panel.active{
+  @apply block;
+}
