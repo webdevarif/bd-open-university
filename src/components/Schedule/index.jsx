@@ -187,14 +187,14 @@ const Schedule = () => {
             </thead>
             )}
             <tbody>
-                {data?.tbody?.map((tr, i) => (
-                    <tr key={i}>
+                {data?.tbody?.map((tr, t) => (
+                    <tr key={t}>
                         <td className='bg-primary border-b-2 border-white text-white py-4 px-3 xl:px-[50px] 2xl:px-[100px] text-[14px] xl:text-xl uppercase font-semibold'>{tr.heading}</td>
                         {tr?.list?.map((td, t) =>(
                         <td className='bg-primary text-white text-center py-4 border-b-2 border-r-2 border-r-primary-light px-3 border-white'>
                             <div className="inline-flex gap-x-4 items-center">
                                 <span>{ td.title }</span>
-                                <Image src={td.thumbnail} className='w-[80px] h-[50px] object-cover' width={150} height={100}/>
+                                <Image src={td.thumbnail} className='w-[80px] h-[50px] object-cover' width={150} height={100} alt={td.title}/>
                             </div>
                         </td>
                         ))}

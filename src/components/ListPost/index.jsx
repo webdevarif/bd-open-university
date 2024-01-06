@@ -29,6 +29,7 @@ const ListPost = ({ list, limit }) => {
                             src={item.thumbnail} 
                             width={500}
                             height={500}
+                            alt="thumb"
                             className='w-full min-w-[120px] aspect-1'
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
