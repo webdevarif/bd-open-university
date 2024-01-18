@@ -2,13 +2,10 @@ import React from 'react';
 import ListPost from '@/components/ListPost';
 import MainLayout from '@/layouts/MainLayout';
 import NewsJson from '@/data/news.json';
-import AcademicBG from '@/assets/images/academic-bg.jpg';
-import Image from 'next/image';
-import TabList from '@/components/TabList';
-import TabJson from '@/data/academic.json';
 import Schedule from '@/components/Schedule';
 import Hero from '@/components/Hero';
 import Link from 'next/link';
+import TabHorizontal from '@/components/TabHorizontal';
 
 
 const Home = () => {
@@ -22,16 +19,7 @@ const Home = () => {
       <Schedule />
 
       {/* TABS CONTENT */}
-      <section className="py-[50px] xl:py-[100px] relative">
-        <div className="absolute top-0 left-0 right-0 bottom-0 blur-lg -z-[1]">
-          <Image src={AcademicBG.src} alt="" fill className='object-cover object-center'/>
-        </div>
-        <div className="relative z-10">
-          <div className="container">
-            <TabList list={TabJson} tabLimit={6} itemLimit={9}/>
-          </div>
-        </div>
-      </section>
+      <TabHorizontal />
 
       {/* NEWS NOTICE */}
       <div className="news-notice py-[100px]">
