@@ -10,7 +10,7 @@ const TabHorizontal = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("http://opentv.nvs.la/api/v1/sg-4/ytlist");
+                const response = await fetch("https://opentv.nvs.la/api/v1/sg-4/ytlist");
                 const result = await response.json();
                 setData(result);
             } catch (error) {

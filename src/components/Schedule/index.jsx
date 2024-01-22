@@ -172,7 +172,7 @@ const Schedule = () => {
     }
   return (
     <div className='py-[100px] shadow-xl overflow-auto'>
-        <table className="w-full table-fixed min-w-[60rem]">
+        {/* <table className="w-full table-fixed min-w-[60rem]">
             {data?.head && (
             <thead>
                 <tr>
@@ -201,7 +201,11 @@ const Schedule = () => {
                     </tr>
                 ))}
             </tbody>
-        </table>
+        </table> */}
+
+        <div className="container">
+            <h1>SCHEDULE SECTION</h1>
+        </div>
     </div>
   )
 }

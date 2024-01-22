@@ -13,6 +13,16 @@ const nextConfig = {
         hostname: 'i.ytimg.com',
         pathname: '**',
       },
+      {
+        protocol: 'http',
+        hostname: 'opentv.nvs.la',
+        pathname: '**',
+      },
+      {
+        protocol: 'http',
+        hostname: 'mapproject.nvs.la',
+        pathname: '**',
+      },
     ],
   },
 }
