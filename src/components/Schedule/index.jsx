@@ -1,210 +1,61 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 
 const Schedule = () => {
-    const data = {
-        head: [
-            {
-                name: "Day"
-            },
-            {
-                name: "10 am - 12 pm"
-            },
-            {
-                name: "12 am - 02 pm"
-            },
-            {
-                name: "02 pm - 04 pm"
-            },
-            {
-                name: "04 pm - 06 pm"
-            }
-        ],
-        tbody: [
-            {
-                heading: "Satarday",
-                list: [
-                    {
-                        title : "Class 1",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    },
-                    {
-                        title : "Class 2",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    },
-                    {
-                        title : "Class 3",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    },
-                    {
-                        title : "Class 4",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    }
-                ]   
-            },
-            {
-                heading: "Sunday",
-                list: [
-                    {
-                        title : "Class 1",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    },
-                    {
-                        title : "Class 2",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    },
-                    {
-                        title : "Class 3",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    },
-                    {
-                        title : "Class 4",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    }
-                ]   
-            },
-            {
-                heading: "Monday",
-                list: [
-                    {
-                        title : "Class 1",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    },
-                    {
-                        title : "Class 2",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    },
-                    {
-                        title : "Class 3",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    },
-                    {
-                        title : "Class 4",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    }
-                ]   
-            },
-            {
-                heading: "Tuesday",
-                list: [
-                    {
-                        title : "Class 1",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    },
-                    {
-                        title : "Class 2",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    },
-                    {
-                        title : "Class 3",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    },
-                    {
-                        title : "Class 4",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    }
-                ]   
-            },
-            {
-                heading: "Wednesday",
-                list: [
-                    {
-                        title : "Class 1",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    },
-                    {
-                        title : "Class 2",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    },
-                    {
-                        title : "Class 3",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    },
-                    {
-                        title : "Class 4",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    }
-                ]   
-            },
-            {
-                heading: "Thursday",
-                list: [
-                    {
-                        title : "Class 1",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    },
-                    {
-                        title : "Class 2",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    },
-                    {
-                        title : "Class 3",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    },
-                    {
-                        title : "Class 4",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    }
-                ]   
-            },
-            {
-                heading: "Friday",
-                list: [
-                    {
-                        title : "Class 1",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    },
-                    {
-                        title : "Class 2",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    },
-                    {
-                        title : "Class 3",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    },
-                    {
-                        title : "Class 4",
-                        thumbnail : "https://via.placeholder.com/150x100",
-                    }
-                ]   
-            }
-        ]
+    const [open, setOpen] = useState(0);
+
+    const handleToggler = (id) => {
+        setOpen(id);
     }
+    const data = [
+        {
+            heading: "1",
+            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque at ullam velit architecto repellat sint minus, quibusdam aspernatur? Esse quos alias autem, temporibus sit repellat eaque, doloribus laborum, nihil rem atque iusto eum nemo voluptatibus. Tempore dicta quis quo temporibus, quibusdam ipsum animi expedita libero? Vero voluptate, eum blanditiis dicta ipsam voluptates minus corrupti eius sed? Veritatis repellat delectus ullam, aperiam, consectetur temporibus dolor exercitationem eaque assumenda, esse quaerat impedit optio. Provident esse, neque mollitia ullam corporis laudantium eaque sit ducimus blanditiis pariatur, illum dolorem distinctio! Ipsum quas vel non optio, nemo voluptas animi corrupti perferendis blanditiis sunt veritatis? Reiciendis explicabo maiores, consequuntur corporis praesentium, dolor, a dolores perferendis mollitia eum possimus rem quod vel nesciunt ipsam. Amet esse quo excepturi unde nihil. Ut labore optio reprehenderit nam! Soluta blanditiis nulla dignissimos reiciendis mollitia facere modi delectus? Alias praesentium voluptates tempora ex labore laudantium debitis, ducimus nulla! Ab, ipsam quae?"
+        },
+        {
+            heading: "1",
+            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque at ullam velit architecto repellat sint minus, quibusdam aspernatur? Esse quos alias autem, temporibus sit repellat eaque, doloribus laborum, nihil rem atque iusto eum nemo voluptatibus. Tempore dicta quis quo temporibus, quibusdam ipsum animi expedita libero? Vero voluptate, eum blanditiis dicta ipsam voluptates minus corrupti eius sed? Veritatis repellat delectus ullam, aperiam, consectetur temporibus dolor exercitationem eaque assumenda, esse quaerat impedit optio. Provident esse, neque mollitia ullam corporis laudantium eaque sit ducimus blanditiis pariatur, illum dolorem distinctio! Ipsum quas vel non optio, nemo voluptas animi corrupti perferendis blanditiis sunt veritatis? Reiciendis explicabo maiores, consequuntur corporis praesentium, dolor, a dolores perferendis mollitia eum possimus rem quod vel nesciunt ipsam. Amet esse quo excepturi unde nihil. Ut labore optio reprehenderit nam! Soluta blanditiis nulla dignissimos reiciendis mollitia facere modi delectus? Alias praesentium voluptates tempora ex labore laudantium debitis, ducimus nulla! Ab, ipsam quae?"
+        },
+        {
+            heading: "1",
+            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque at ullam velit architecto repellat sint minus, quibusdam aspernatur? Esse quos alias autem, temporibus sit repellat eaque, doloribus laborum, nihil rem atque iusto eum nemo voluptatibus. Tempore dicta quis quo temporibus, quibusdam ipsum animi expedita libero? Vero voluptate, eum blanditiis dicta ipsam voluptates minus corrupti eius sed? Veritatis repellat delectus ullam, aperiam, consectetur temporibus dolor exercitationem eaque assumenda, esse quaerat impedit optio. Provident esse, neque mollitia ullam corporis laudantium eaque sit ducimus blanditiis pariatur, illum dolorem distinctio! Ipsum quas vel non optio, nemo voluptas animi corrupti perferendis blanditiis sunt veritatis? Reiciendis explicabo maiores, consequuntur corporis praesentium, dolor, a dolores perferendis mollitia eum possimus rem quod vel nesciunt ipsam. Amet esse quo excepturi unde nihil. Ut labore optio reprehenderit nam! Soluta blanditiis nulla dignissimos reiciendis mollitia facere modi delectus? Alias praesentium voluptates tempora ex labore laudantium debitis, ducimus nulla! Ab, ipsam quae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque at ullam velit architecto repellat sint minus, quibusdam aspernatur? Esse quos alias autem, temporibus sit repellat eaque, doloribus laborum, nihil rem atque iusto eum nemo voluptatibus. Tempore dicta quis quo temporibus, quibusdam ipsum animi expedita libero? Vero voluptate, eum blanditiis dicta ipsam voluptates minus corrupti eius sed? Veritatis repellat delectus ullam, aperiam, consectetur temporibus dolor exercitationem eaque assumenda, esse quaerat impedit optio. Provident esse, neque mollitia ullam corporis laudantium eaque sit ducimus blanditiis pariatur, illum dolorem distinctio! Ipsum quas vel non optio, nemo voluptas animi corrupti perferendis blanditiis sunt veritatis? Reiciendis explicabo maiores, consequuntur corporis praesentium, dolor, a dolores perferendis mollitia eum possimus rem quod vel nesciunt ipsam. Amet esse quo excepturi unde nihil. Ut labore optio reprehenderit nam! Soluta blanditiis nulla dignissimos reiciendis mollitia facere modi delectus? Alias praesentium voluptates tempora ex labore laudantium debitis, ducimus nulla! Ab, ipsam quae?"
+        },
+        {
+            heading: "1",
+            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque at ullam velit architecto repellat sint minus, quibusdam aspernatur? Esse quos alias autem, temporibus sit repellat eaque, doloribus laborum, nihil rem atque iusto eum nemo voluptatibus. Tempore dicta quis quo temporibus, quibusdam ipsum animi expedita libero? Vero voluptate, eum blanditiis dicta ipsam voluptates minus corrupti eius sed? Veritatis repellat delectus ullam, aperiam, consectetur temporibus dolor exercitationem eaque assumenda, esse quaerat impedit optio. Provident esse, neque mollitia ullam corporis laudantium eaque sit ducimus blanditiis pariatur, illum dolorem distinctio! Ipsum quas vel non optio, nemo voluptas animi corrupti perferendis blanditiis sunt veritatis? Reiciendis explicabo maiores, consequuntur corporis praesentium, dolor, a dolores perferendis mollitia eum possimus rem quod vel nesciunt ipsam. Amet esse quo excepturi unde nihil. Ut labore optio reprehenderit nam! Soluta blanditiis nulla dignissimos reiciendis mollitia facere modi delectus? Alias praesentium voluptates tempora ex labore laudantium debitis, ducimus nulla! Ab, ipsam quae?"
+        },
+    ]
   return (
     <div className='py-[100px] shadow-xl overflow-auto'>
-        {/* <table className="w-full table-fixed min-w-[60rem]">
-            {data?.head && (
-            <thead>
-                <tr>
-                {data?.head?.map((header, i) => (
-                    <th key={i} className='px-3 text-center'>
-                    <span className={`inline-flex px-3 w-full max-w-[200px] justify-center bg-primary-light text-white relative -mb-[2px] py-4 rounded-tl-xl rounded-tr-xl text-[16px] xl:text-[20px] font-normal uppercase`}>
-                        {header.name}
-                    </span>
-                    </th>
-                ))}
-                </tr>
-            </thead>
-            )}
-            <tbody>
-                {data?.tbody?.map((tr, t) => (
-                    <tr key={t}>
-                        <td className='bg-primary border-b-2 border-white text-white py-4 px-3 xl:px-[50px] 2xl:px-[100px] text-[14px] xl:text-xl uppercase font-semibold'>{tr.heading}</td>
-                        {tr?.list?.map((td, t) =>(
-                        <td key={t} className='bg-primary text-white text-center py-4 border-b-2 border-r-2 border-r-primary-light px-3 border-white'>
-                            <div className="inline-flex gap-x-4 items-center">
-                                <span>{ td.title }</span>
-                                <Image src={td.thumbnail} className='w-[80px] h-[50px] object-cover' width={150} height={100} alt={td.title}/>
-                            </div>
-                        </td>
-                        ))}
-                    </tr>
-                ))}
-            </tbody>
-        </table> */}
-
         <div className="container">
-            <h1>SCHEDULE SECTION</h1>
+            <div className="grid gap-6 md:grid-cols-[20rem_1fr]">
+                <div className="tab-nav">
+                    <ul className="tab-nav__list">
+                        { data && data.map((item, i) =>
+                            <li key={i} className={`tab-nav__list-item ${i === open ? 'active': ''}`} onClick={() => handleToggler(i)}>
+                                <div className='bg-primary text-white p-2 rounded-xl min-w-[6rem] w-[6rem] aspect-square inline-flex flex-col items-center justify-center text-center'>
+                                    <div className="mb-1 text-sm">Mon</div>
+                                    <h2 className="mb-0 text-3xl leading-[1] font-semibold">20</h2>
+                                </div>
+                                <div className='py-3 px-4'>
+                                    <h3 className={`text-lg font-semibold ${i=== open ? 'text-white' : 'text-primary'}`}>Unity Ui KIt</h3>
+                                    <p className={`text-sm text-opacity-50 mb-2 ${i=== open ? 'text-white' : 'text-black'}`}>Ui Design</p>
+                                    <div className={`bg-opacity-25 inline-flex px-3 py-1 text-sm rounded font-semibold leading-[1.3] ${i=== open ? 'bg-white' : 'bg-primary text-primary'}`}>
+                                        <span>10:00</span>
+                                    </div>
+                                </div>
+
+                                <span className='ms-auto'>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg>
+                                </span>
+                        </li>
+                        )}
+                    </ul>
+                </div>
+                <div className="tab-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque at ullam velit architecto repellat sint minus, quibusdam aspernatur? Esse quos alias autem, temporibus sit repellat eaque, doloribus laborum, nihil rem atque iusto eum nemo voluptatibus. Tempore dicta quis quo temporibus, quibusdam ipsum animi expedita libero? Vero voluptate, eum blanditiis dicta ipsam voluptates minus corrupti eius sed? Veritatis repellat delectus ullam, aperiam, consectetur temporibus dolor exercitationem eaque assumenda, esse quaerat impedit optio. Provident esse, neque mollitia ullam corporis laudantium eaque sit ducimus blanditiis pariatur, illum dolorem distinctio! Ipsum quas vel non optio, nemo voluptas animi corrupti perferendis blanditiis sunt veritatis? Reiciendis explicabo maiores, consequuntur corporis praesentium, dolor, a dolores perferendis mollitia eum possimus rem quod vel nesciunt ipsam. Amet esse quo excepturi unde nihil. Ut labore optio reprehenderit nam! Soluta blanditiis nulla dignissimos reiciendis mollitia facere modi delectus? Alias praesentium voluptates tempora ex labore laudantium debitis, ducimus nulla! Ab, ipsam quae?
+                </div>
+            </div>
         </div>
     </div>
   )

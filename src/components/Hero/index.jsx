@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className='hero py-[50px]'>
       <div className="container">
-        <VideoPlayer src="https://network10.livebox.co.in/network10hls/live.m3u8"/>
+        <VideoPlayer src="https://tempe.jagobd.com:1933/iptvsss/boulive.stream/playlist.m3u8"/>
       </div>
     </section>
   );
