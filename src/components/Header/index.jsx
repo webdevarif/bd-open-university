@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import GooglePlay from '@/assets/images/google-play.png';
 import Radio from '@/assets/images/radio.png';
-import Logo from '@/assets/images/logo.png';
+import Logo from '@/assets/images/logo.jpg';
 import Image from 'next/image';
 import Drawer from './drawer';
 import Link from 'next/link';
